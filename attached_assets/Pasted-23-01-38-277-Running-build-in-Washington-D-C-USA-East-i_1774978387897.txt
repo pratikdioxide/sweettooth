@@ -1,0 +1,48 @@
+23:01:38.277 Running build in Washington, D.C., USA (East) – iad1
+23:01:38.278 Build machine configuration: 2 cores, 8 GB
+23:01:38.385 Cloning github.com/pratikdioxide/sweettooth (Branch: main, Commit: afc2216)
+23:01:38.386 Previous build caches not available.
+23:01:38.547 Cloning completed: 161.000ms
+23:01:39.164 Running "vercel build"
+23:01:39.826 Vercel CLI 50.37.3
+23:01:40.313 Installing dependencies...
+23:01:48.037 npm warn deprecated next@14.2.3: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/security-update-2025-12-11 for more details.
+23:01:48.061 
+23:01:48.063 added 22 packages in 8s
+23:01:48.063 
+23:01:48.063 3 packages are looking for funding
+23:01:48.064   run `npm fund` for details
+23:01:48.106 Running "npm run build"
+23:01:48.210 
+23:01:48.211 > sweettooth@0.1.0 build
+23:01:48.211 > next build
+23:01:48.212 
+23:01:48.784 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+23:01:48.784 This information is used to shape Next.js' roadmap and prioritize features.
+23:01:48.785 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+23:01:48.785 https://nextjs.org/telemetry
+23:01:48.785 
+23:01:48.835   ▲ Next.js 14.2.3
+23:01:48.836 
+23:01:48.836    Linting and checking validity of types ...
+23:01:48.959    Creating an optimized production build ...
+23:01:54.368  ✓ Compiled successfully
+23:01:54.370    Collecting page data ...
+23:01:54.789    Generating static pages (0/3) ...
+23:01:55.084  ✓ Generating static pages (3/3)
+23:01:55.263    Finalizing page optimization ...
+23:01:55.264    Collecting build traces ...
+23:02:00.350 
+23:02:00.360 Route (pages)                             Size     First Load JS
+23:02:00.361 ┌ ○ /                                     3.59 kB        81.8 kB
+23:02:00.361 ├   /_app                                 0 B            78.2 kB
+23:02:00.361 └ ○ /404                                  180 B          78.4 kB
+23:02:00.362 + First Load JS shared by all             81.7 kB
+23:02:00.362   ├ chunks/framework-ecc4130bc7a58a64.js  45.2 kB
+23:02:00.362   ├ chunks/main-f61746aa183f4a64.js       32 kB
+23:02:00.362   └ other shared chunks (total)           4.48 kB
+23:02:00.363 
+23:02:00.363 ○  (Static)  prerendered as static content
+23:02:00.363 
+23:02:00.401 Error: No Output Directory named "public" found after the Build completed. Configure the Output Directory in your Project Settings. Alternatively, configure vercel.json#outputDirectory.
+23:02:00.402 Learn More: https://vercel.link/missing-public-directory
