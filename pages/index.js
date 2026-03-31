@@ -210,18 +210,18 @@ export default function Home() {
           <a href="#why">Why Us</a>
           <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="nav-cta">Order Now</a>
         </div>
-        <div className="nav-hamburger" onClick={() => setMenuOpen(true)} aria-label="Open menu">
-          <span /><span /><span />
+        <div className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Toggle menu">
+          <span className={menuOpen ? 'open' : ''} /><span className={menuOpen ? 'open' : ''} /><span className={menuOpen ? 'open' : ''} />
         </div>
       </nav>
 
       {/* ── MOBILE MENU ── */}
+      {menuOpen && <div className="mobile-overlay" onClick={() => setMenuOpen(false)} />}
       <div className={`mobile-menu${menuOpen ? ' open' : ''}`}>
-        <button className="mobile-close" onClick={() => setMenuOpen(false)} aria-label="Close menu">&#x2715;</button>
         <a href="#menu" onClick={() => setMenuOpen(false)}>Menu</a>
         <a href="#about" onClick={() => setMenuOpen(false)}>Our Story</a>
         <a href="#why" onClick={() => setMenuOpen(false)}>Why Us</a>
-        <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} style={{color:'var(--caramel)'}}>Order on WhatsApp</a>
+        <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="mobile-menu-cta">Order on WhatsApp</a>
       </div>
 
       {/* ── HERO ── */}
