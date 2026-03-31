@@ -236,7 +236,7 @@ export default function Home() {
             </div>
             <h1>
               Baked with <em>Love,</em><br />
-              Delivered with Care
+              Delivered with <em>Care</em>
             </h1>
           </div>
 
@@ -396,6 +396,14 @@ export default function Home() {
         </div>
         <div className="footer-bottom">
           <p>© 2024 Sweet Tooth | Home Bakery · All rights reserved.</p>
+          <a href="https://xpratik.vercel.app" target="_blank" rel="noreferrer" className="made-by-btn">
+            <span className="made-by-text">MADE BY PRATIK</span>
+            <img
+              src="https://raw.githubusercontent.com/pratik11500/PratikPortfolio/refs/heads/replit-agent/assets/images/logo.png"
+              alt="Pratik"
+              className="made-by-logo"
+            />
+          </a>
           <p className="nuts-note"><AlertIcon /> Few products may contain nuts.</p>
         </div>
       </footer>
