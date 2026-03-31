@@ -142,7 +142,7 @@ const products = [
     name: 'Pizookie',
     varieties: ['Chocochips', 'Nuts Overloaded'],
     price: '₹450 (regular)',
-    img: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80',
+    img: '/pizookie.png',
   },
   {
     name: 'Brownies',
@@ -201,7 +201,9 @@ export default function Home() {
 
       {/* ── NAVBAR ── */}
       <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
-        <img src="/logo.png" alt="Sweet Tooth Logo" className="nav-logo" />
+        <div className="nav-logo-wrap">
+          <img src="/logo.png" alt="Sweet Tooth Logo" className="nav-logo" />
+        </div>
         <div className="nav-links">
           <a href="#menu">Menu</a>
           <a href="#about">Our Story</a>
@@ -236,38 +238,18 @@ export default function Home() {
               Baked with <em>Love,</em><br />
               Delivered with Care
             </h1>
-            <p className="hero-sub">
-              Eggless cakes, gooey brownies, fresh doughnuts &amp; more —
-              made from scratch at home with no chemicals, no preservatives, just pure joy.
+          </div>
+
+          <div className="hero-right">
+            <p className="hero-right-sub">
+              Eggless cakes, gooey brownies, fresh doughnuts &amp; more — made from scratch at home with no chemicals, no preservatives, just pure joy.
             </p>
-            <div className="hero-actions">
+            <div className="hero-right-actions">
               <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="btn-primary">
                 <WhatsAppIcon /> Order on WhatsApp
               </a>
               <a href="#menu" className="btn-outline">
                 <CakeIcon /> Browse Menu
-              </a>
-            </div>
-          </div>
-
-          <div className="hero-right">
-            <div className="hero-card">
-              <div className="hero-card-label">Popular Picks</div>
-              {[
-                { name: 'Chocochip Cookies', price: '₹800/kg', img: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=200&q=80' },
-                { name: 'Fudge Brownies', price: '₹700/kg', img: 'https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=200&q=80' },
-                { name: 'Fresh Doughnuts', price: '₹70/piece', img: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?w=200&q=80' },
-              ].map(item => (
-                <div className="hero-mini-card" key={item.name}>
-                  <img src={item.img} alt={item.name} />
-                  <div className="hero-mini-info">
-                    <div className="hero-mini-name">{item.name}</div>
-                    <div className="hero-mini-price">{item.price}</div>
-                  </div>
-                </div>
-              ))}
-              <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="hero-card-cta">
-                <WhatsAppIcon /> Order Now
               </a>
             </div>
           </div>
@@ -407,7 +389,7 @@ export default function Home() {
             </div>
             <br />
             <h4>Directions</h4>
-            <a href="https://maps.google.com/?q=B1+501+Bharat+City+Farukh+Nagar+Road+Ghaziabad" target="_blank" rel="noreferrer">
+            <a href="https://g.page/r/CXwgtH05qh0rEAE" target="_blank" rel="noreferrer">
               View on Google Maps &#x2197;
             </a>
           </div>
